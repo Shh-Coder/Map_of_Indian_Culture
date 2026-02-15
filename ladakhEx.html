@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jammu & Kashmir - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f8ff;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #0077b6, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+section {
+    padding: 30px 20px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;   /* Reduced size */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #0077b6;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #023e8a;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>❄ Jammu & Kashmir ❄</h1>
+    <p>The Paradise on Earth</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<div class="card">
+    <img src="dal.jpg" alt="Dal Lake">
+    <div class="card-content">
+        <h2>Dal Lake</h2>
+        <p>
+        Dal Lake in Srinagar is famous for its beautiful shikara rides,
+        floating markets, and houseboats. It reflects the majestic Himalayas
+        and is one of the most iconic attractions.
+        </p>
+        <p>
+        The lake represents the cultural heart of Kashmir,
+        where traditional wooden houseboats and vibrant markets
+        create a peaceful yet lively atmosphere.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="gulmarg.jpg" alt="Gulmarg">
+    <div class="card-content">
+        <h2>Gulmarg</h2>
+        <p>
+        Gulmarg is a popular hill station known for snow activities,
+        skiing, and the Gulmarg Gondola — one of the highest cable cars in the world.
+        </p>
+        <p>
+        Surrounded by snow-covered mountains and green meadows,
+        Gulmarg attracts adventure lovers and nature enthusiasts
+        throughout the year.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="mughalgarden.jpg" alt="Mughal Gardens">
+    <div class="card-content">
+        <h2>Mughal Gardens</h2>
+        <p>
+        The Mughal Gardens showcase Persian-style architecture with flowing fountains,
+        terraced lawns, and colorful flowers built during the Mughal era.
+        </p>
+        <p>
+        These gardens reflect the artistic vision of Mughal emperors
+        and highlight the region’s historical elegance
+        and love for nature and symmetry.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";
+}
+</script>
+
+</body>
+</html>

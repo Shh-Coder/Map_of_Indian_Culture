@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Andhra Pradesh - Culture & Folklore</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right,rgb(0, 119, 128), rgb(0, 115, 128));
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: orchid;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #43ffa7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: violet;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌟 Andhra Pradesh 🌟</h1>
+    <p>Land of Temples, Dance & Folk Traditions</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Kuchipudi Dance -->
+<div class="card">
+    <img src="kuchipudi.jpg" alt="Kuchipudi Dance">
+    <div class="card-content">
+        <h2>Kuchipudi Dance</h2>
+        <p>
+        Andhra Pradesh is the birthplace of Kuchipudi, one of India’s classical dance forms.
+        This dance combines intricate footwork, expressive gestures, and storytelling from Hindu epics.
+        </p>
+        <p>
+        It is performed during festivals, temple rituals, and cultural events.
+        </p>
+    </div>
+</div>
+
+<!-- Traditional Festivals -->
+<div class="card">
+    <img src="sankranti.jpg" alt="Sankranti Festival">
+    <div class="card-content">
+        <h2>Festivals</h2>
+        <p>
+        Major festivals include Sankranti, Ugadi, and Vinayaka Chaviti.
+        Sankranti is celebrated with kite flying, traditional dances, and local delicacies.
+        </p>
+        <p>
+        These festivals showcase Andhra Pradesh’s rich folklore, rituals, and vibrant community celebrations.
+        </p>
+    </div>
+</div>
+
+<!-- Handicrafts & Weaving -->
+<div class="card">
+    <img src="kalamkari.jpg" alt="Handicrafts">
+    <div class="card-content">
+        <h2>Handicrafts & Weaving</h2>
+        <p>
+        Andhra Pradesh is famous for its Kalamkari paintings, Kondapalli toys, and handwoven silk sarees.
+        Craftsmen and artisans use traditional methods passed down through generations.
+        </p>
+        <p>
+        Folk stories and local legends are often depicted through these artworks.
+        </p>
+    </div>
+</div>
+
+<!-- Temples & Cultural Heritage -->
+<div class="card">
+    <img src="balaji.jpg" alt="Temples">
+    <div class="card-content">
+        <h2>Temples & Cultural Heritage</h2>
+        <p>
+        Andhra Pradesh is home to historic temples like Tirupati Balaji and Kanaka Durga Temple.
+        Religious rituals and temple festivals preserve local folklore and devotional traditions.
+        </p>
+        <p>
+        Temple arts, music, and annual fairs attract devotees and cultural enthusiasts.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Folklore Summary</h2>
+        <p>
+        Andhra Pradesh has a rich cultural heritage combining classical dance, folk music, temple rituals, handicrafts, and festivals.  
+        From Kuchipudi dance performances to local fairs, the state preserves its folklore, traditions, and vibrant arts for generations.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Assuming the popup page is andhrapradesh.html
+}
+</script>
+
+</body>
+</html>
