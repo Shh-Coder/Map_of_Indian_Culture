@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Karnataka - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #0077ff, #00c4ff);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #0077ff;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005bb5;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌟 Karnataka 🌟</h1>
+    <p>The Land of Temples, Heritage & Festivals</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Mysore Palace -->
+<div class="card">
+    <img src="MysorePalace.jpg" alt="Mysore Palace">
+    <div class="card-content">
+        <h2>Mysore Palace</h2>
+        <p>
+        The Mysore Palace is one of the most famous landmarks of Karnataka.
+        Known for its grand architecture, royal history, and evening illumination,
+        it is a major tourist attraction in Mysore city.
+        </p>
+        <p>
+        The palace hosts the annual Dasara festival, attracting thousands of visitors
+        from across India and abroad.
+        </p>
+    </div>
+</div>
+
+<!-- Hampi -->
+<div class="card">
+    <img src="hampi.jpg" alt="Hampi">
+    <div class="card-content">
+        <h2>Hampi</h2>
+        <p>
+        Hampi is a UNESCO World Heritage Site famous for its ruins of the Vijayanagara Empire.
+        The stone temples, monuments, and landscape are breathtaking examples
+        of historical and architectural brilliance.
+        </p>
+        <p>
+        Hampi attracts history enthusiasts, photographers, and travelers
+        seeking to explore Karnataka's rich past.
+        </p>
+    </div>
+</div>
+
+<!-- Coorg -->
+<div class="card">
+    <img src="coorg.jpg" alt="Coorg">
+    <div class="card-content">
+        <h2>Coorg</h2>
+        <p>
+        Known as the Scotland of India, Coorg is a hill station famous for coffee plantations,
+        scenic hills, waterfalls, and rich biodiversity.
+        </p>
+        <p>
+        Coorg also showcases Kodava culture, with traditional festivals,
+        dance, and cuisine offering a unique experience to visitors.
+        </p>
+    </div>
+</div>
+
+<!-- Dasara Festival -->
+<div class="card">
+    <img src="dasara.jpg" alt="Dasara Festival">
+    <div class="card-content">
+        <h2>Dasara Festival</h2>
+        <p>
+        Karnataka’s Dasara, especially in Mysore, is a grand 10-day celebration.
+        It features processions, music, dance, decorated elephants, and cultural programs.
+        </p>
+        <p>
+        The festival is a vibrant display of tradition, art, and devotion,
+        bringing together locals and tourists in celebration.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Traditions</h2>
+        <p>
+        Karnataka is rich in Carnatic music, Yakshagana dance-drama, folk arts,
+        classical temples, and colorful festivals.
+        The state beautifully balances its historical heritage
+        with modern city life.
+        </p>
+        <p>
+        From traditional attire like Ilkal sarees to vibrant dhol performances
+        during festivals, Karnataka’s culture reflects diversity,
+        creativity, and artistic excellence.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Assuming the popup page is karnataka.html
+}
+</script>
+
+</body>
+</html>
