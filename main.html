@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map of Indian Culture | Indian Folklore Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #main-content {
+      flex: 1;
+    }
+
+    .state {
+      fill: #e2e8f0;
+      stroke: #64748b;
+      stroke-width: 1;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .state:hover {
+      fill: #f59e0b;
+      filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
+    }
+    #tooltip {
+      position: fixed;
+      display: none;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #d1d5db;
+      padding: 12px;
+      border-radius: 8px;
+      pointer-events: none;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      z-index: 50;
+      max-width: 250px;
+    }
+    .fade-exit {
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    .page-transition {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    .play-link {
+      text-decoration: none;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      margin: 0 auto 2rem;
+    }
+
+    .play-icon {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 0 15px 26px;
+      border-color: transparent transparent transparent #ffffff;
+      margin-left: 6px;
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+    }
+
+    .play-link:hover {
+      transform: scale(1.15);
+      background: rgba(255, 255, 255, 0.2);
+      border-color: #ff4757;
+      box-shadow: 0 0 20px #ff4757;
+    }
+
+    .play-link:hover .play-icon {
+      border-color: transparent transparent transparent #ff4757;
+    }
+
+    .play-link::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: #ff4757;
+      opacity: 0.2;
+      z-index: -1;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.4; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+  <div id="main-content" class="fade-exit">
+    <header class="p-6 flex justify-between items-center bg-white shadow-sm">
+      <h1 class="text-3xl font-bold text-orange-600">Map of Indian Culture</h1>
+      <a href="/files/index.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition shadow-md">
+        Enter Full Experience →
+      </a>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+      <div class="flex flex-col items-center justify-center mb-8">
+        <a href="/files/index.html" class="play-link">
+          <div class="play-icon"></div>
+        </a>
+      </div>
+
+      <div class="space-y-6 max-w-2xl mx-auto">
+        <h2 class="text-4xl font-extrabold text-slate-900 leading-tight text-center">
+          The Tapestry of <span class="text-orange-500">Indian Lore</span>
+        </h2>
+        <p class="text-lg text-slate-600 leading-relaxed text-center">
+          India's culture is not a single thread, but a vibrant weave of thousands of local legends, deities, and oral traditions. From the snow-capped myths of the Himalayas to the maritime fables of the Indian Ocean, every state carries a unique soul.
+        </p>
+        <p class="text-lg text-slate-600 leading-relaxed text-center">
+           CLICK THE "PLAY" BUTTON ABOVE TO DIVE INTO THE CULTURE AND FOLKLORE OF INDIA
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          <div class="p-4 bg-orange-50 border-l-4 border-orange-400">
+            <h4 class="font-bold">Oral Traditions</h4>
+            <p class="text-sm">Vedas and Puranas passed down through generations.</p>
+          </div>
+          <div class="p-4 bg-blue-50 border-l-4 border-blue-400">
+            <h4 class="font-bold">Diverse Festivals</h4>
+            <p class="text-sm">Every harvest and moon cycle has a story to tell.</p>
+          </div>
+          <div class="p-4 bg-yellow-50 border-l-4 border-yellow-400">
+            <h4 class="font-bold">Traditional Clothing</h4>
+            <p class="text-sm">State specific "Paushakh" meaning outfit.</p>
+          </div>
+          <div class="p-4 bg-pink-50 border-l-4 border-pink-400">
+            <h4 class="font-bold">Folk Dance</h4>
+            <p class="text-sm">Unique Folkdance of different states</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="bg-white py-8 border-t border-slate-200 text-center">
+    <p class="text-slate-600">Created by <span class="font-semibold text-orange-600">Team HELIX</span></p>
+  </div>
+
+  <div class="bg-white py-8 border-t border-slate-200 text-center">
+    <p class="text-slate-600">Team HELIX Members: <span class="font-semibold text-orange-600">Vedant Alone, Piyush Malewar, Shreyak Indane</span></p>
+  </div>
+
+  <footer class="bg-slate-900 text-slate-300 py-12">
+    <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+      <div>
+      <h3 class="text-orange-500 font-bold text-lg mb-4">About</h3>
+      <p class="text-sm leading-relaxed">Explore the rich tapestry of Indian folklore and cultural traditions across all states.</p>
+      </div>
+      <div>
+      <h3 class="text-orange-500 font-bold text-lg mb-4">Quick Links</h3>
+      <ul class="text-sm space-y-2">
+        <li><a href="#" class="hover:text-orange-500 transition">Home</a></li>
+        <li><a href="#" class="hover:text-orange-500 transition">Explore States</a></li>
+        <li><a href="#" class="hover:text-orange-500 transition">Contact</a></li>
+      </ul>
+      </div>
+      <div>
+      <h3 class="text-orange-500 font-bold text-lg mb-4">Follow Us</h3>
+      <div class="flex space-x-4 text-sm">
+        <a href="#" class="hover:text-orange-500 transition">Twitter</a>
+        <a href="#" class="hover:text-orange-500 transition">Facebook</a>
+        <a href="#" class="hover:text-orange-500 transition">Instagram</a>
+      </div>
+      </div>
+    </div>
+    <div class="border-t border-slate-700 pt-8 text-center text-sm">
+      <p>&copy; 2024 Map of Indian Culture. All rights reserved.</p>
+    </div>
+    </div>
+  </footer>
+
+  <script>
+    
+  </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map of Indian Culture | Indian Folklore Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .state {
+            fill: #e2e8f0;
+            stroke: #64748b;
+            stroke-width: 1;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .state:hover {
+            fill: #f59e0b;
+            filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
+        }
+        #tooltip {
+            position: fixed;
+            display: none;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid #d1d5db;
+            padding: 12px;
+            border-radius: 8px;
+            pointer-events: none;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            z-index: 50;
+            max-width: 250px;
+        }
+        .fade-exit {
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .page-transition {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        :root {
+    --primary-color: #ff4757; /* Vibrant coral/red */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+  }
+
+  body {
+    background: #0f0c29; /* Dark background to make glass effect pop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .play-link {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px); /* The "Frosted" effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  /* The Triangle Icon */
+  .play-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color: transparent transparent transparent #ffffff;
+    margin-left: 6px; /* Visual centering */
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+  }
+
+  /* Hover & Animation Effects */
+  .play-link:hover {
+    transform: scale(1.15);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+  }
+
+  .play-link:hover .play-icon {
+    border-color: transparent transparent transparent var(--primary-color);
+  }
+
+  /* Pulsing glow ring */
+  .play-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--primary-color);
+    opacity: 0.2;
+    z-index: -1;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.4; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800">
+
+    <div id="main-content" class="fade-exit">
+        <header class="p-6 flex justify-between items-center bg-white shadow-sm">
+            <h1 class="text-3xl font-bold text-orange-600">Map of Indian Culture</h1>
+            <a href="/files/index.html" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition shadow-md">
+                Enter Full Experience →
+            </a>
+        </header>
+
+        <a href="/files/index.html" class="play-link">
+          <div class="play-icon"></div>
+        </a>
+        <main class="container mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+            
+
+            <div class="space-y-6">
+                <h2 class="text-4xl font-extrabold text-slate-900 leading-tight">
+                    The Tapestry of <span class="text-orange-500">Indian Lore</span>
+                </h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    India’s culture is not a single thread, but a vibrant weave of thousands of local legends, deities, and oral traditions. From the snow-capped myths of the Himalayas to the maritime fables of the Indian Ocean, every state carries a unique soul.
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                   CLICK THE ""PLAY"" button beside to dive into the Culture and Folklore of INDIA
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-orange-50 border-l-4 border-orange-400">
+                        <h4 class="font-bold">Oral Traditions</h4>
+                        <p class="text-sm">Vedas and Puranas passed down through generations.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 border-l-4 border-blue-400">
+                        <h4 class="font-bold">Diverse Festivals</h4>
+                        <p class="text-sm">Every harvest and moon cycle has a story to tell.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-yellow-50 border-l-4 border-yellow-400">
+                        <h4 class="font-bold">Traditional Clothing</h4>
+                        <p class="text-sm">State specific "Paushakh" meaning outfit.</p>
+                    </div>
+                    <div class="p-4 bg-pink-50 border-l-4 border-pink-400">
+                        <h4 class="font-bold">Folk Dance</h4>
+                        <p class="text-sm">Unique Folkdance of different states</p>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+    <div class="bg-white py-8 border-t border-slate-200">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-slate-600">Created by <span class="font-semibold text-orange-600">Team HELIX</span></p>
+      </div>
+    </div>
+    <div class="bg-white py-8 border-t border-slate-200">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-slate-600">Team HELIX Members: <span class="font-semibold text-orange-600">Vedant Alone, Piyush Malewar, Shreyak Indane</span></p>
+      </div>
+    </div>
+    <footer class="bg-slate-900 text-slate-300 py-12 mt-20">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h3 class="text-orange-500 font-bold text-lg mb-4">About</h3>
+            <p class="text-sm leading-relaxed">Explore the rich tapestry of Indian folklore and cultural traditions across all states.</p>
+          </div>
+          <div>
+            <h3 class="text-orange-500 font-bold text-lg mb-4">Quick Links</h3>
+            <ul class="text-sm space-y-2">
+              <li><a href="#" class="hover:text-orange-500 transition">Home</a></li>
+              <li><a href="#" class="hover:text-orange-500 transition">Explore States</a></li>
+              <li><a href="#" class="hover:text-orange-500 transition">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-orange-500 font-bold text-lg mb-4">Follow Us</h3>
+            <div class="flex space-x-4 text-sm">
+              <a href="#" class="hover:text-orange-500 transition">Twitter</a>
+              <a href="#" class="hover:text-orange-500 transition">Facebook</a>
+              <a href="#" class="hover:text-orange-500 transition">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-slate-700 pt-8 text-center text-sm">
+          <p>&copy; 2024 Map of Indian Culture. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html> -->
