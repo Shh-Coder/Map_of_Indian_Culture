@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>West Bengal - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #1b5e20, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #1b5e20;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #1b5e20;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #004d1a;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌟 West Bengal 🌟</h1>
+    <p>The Land of Culture, Festivals & Heritage</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Victoria Memorial -->
+<div class="card">
+    <img src="victoria.jpg" alt="Victoria Memorial">
+    <div class="card-content">
+        <h2>Victoria Memorial</h2>
+        <p>
+        The Victoria Memorial in Kolkata is a grand marble monument
+        built during the British era, now serving as a museum and cultural hub.
+        </p>
+        <p>
+        It is surrounded by beautiful gardens and reflects the architectural heritage
+        of colonial India in West Bengal.
+        </p>
+    </div>
+</div>
+
+<!-- Howrah Bridge -->
+<div class="card">
+    <img src="howrah.jpg" alt="Howrah Bridge">
+    <div class="card-content">
+        <h2>Howrah Bridge</h2>
+        <p>
+        Howrah Bridge is an iconic cantilever bridge over the Hooghly River in Kolkata.
+        Connecting the city and Howrah, it is a symbol of West Bengal’s urban culture
+        and bustling trade.
+        </p>
+        <p>
+        The bridge attracts photographers, tourists, and daily commuters alike.
+        </p>
+    </div>
+</div>
+
+<!-- Sundarbans -->
+<div class="card">
+    <img src="sunderbans.jpg" alt="Sundarbans">
+    <div class="card-content">
+        <h2>Sundarbans</h2>
+        <p>
+        The Sundarbans mangrove forest is a UNESCO World Heritage Site,
+        home to the Royal Bengal Tiger and rich biodiversity.
+        </p>
+        <p>
+        Visitors can enjoy nature tours, wildlife sightings,
+        and explore the unique ecosystem of West Bengal’s coastal region.
+        </p>
+    </div>
+</div>
+
+<!-- Durga Puja -->
+<div class="card">
+    <img src="durga.jpg" alt="Durga Puja">
+    <div class="card-content">
+        <h2>Durga Puja</h2>
+        <p>
+        Durga Puja is the grandest festival of West Bengal, celebrated with
+        elaborate pandals, artistic idols, music, dance, and cultural programs.
+        </p>
+        <p>
+        The festival marks the victory of Goddess Durga over evil,
+        bringing communities together in devotion and celebration.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Traditions</h2>
+        <p>
+        West Bengal is known for its literature, classical music, dance forms like Chhau,
+        traditional arts like terracotta and clay idols, and vibrant festivals.
+        </p>
+        <p>
+        From Bengali cuisine like Rosogolla and Mishti Doi to folk arts and temple architecture,
+        West Bengal’s culture reflects richness, creativity, and spiritual depth.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Assuming the popup page is westbengal.html
+}
+</script>
+
+</body>
+</html>
