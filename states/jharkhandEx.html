@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jharkhand - Culture & Folklore</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0; /* warm background */
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #8e24aa, #ba68c8); /* purple gradient for rich culture */
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: #f3e5f5; /* light purple */
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #8e24aa; /* deep purple heading */
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #ab47bc; /* purple button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6a1b9a; /* darker purple */
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌳 Jharkhand 🌳</h1>
+    <p>Land of Forests, Tribes & Rich Folklore</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Hundru Falls -->
+<div class="card">
+    <img src="hundru.jpg" alt="Hundru Falls">
+    <div class="card-content">
+        <h2>Hundru Falls</h2>
+        <p>One of the highest waterfalls in India, formed by the Subarnarekha River. A natural wonder surrounded by lush forests.</p>
+    </div>
+</div>
+
+<!-- Betla National Park -->
+<div class="card">
+    <img src="betla.jpg" alt="Betla National Park">
+    <div class="card-content">
+        <h2>Betla National Park</h2>
+        <p>A beautiful wildlife reserve with hills, forests, and ancient forts. It showcases Jharkhand's biodiversity and tribal heritage.</p>
+    </div>
+</div>
+
+<!-- Tribal Culture & Festivals -->
+<div class="card">
+    <img src="tribal.jpg" alt="Jharkhand Tribal Culture">
+    <div class="card-content">
+        <h2>Tribal Culture & Festivals</h2>
+        <p>Jharkhand is home to rich tribal traditions like Sarhul, Karma, and Sohrai festivals. Folk music, dances, and rituals preserve tribal folklore.</p>
+    </div>
+</div>
+
+<!-- Chhau Dance -->
+<div class="card">
+    <img src="chhau.jpg" alt="Chhau Dance">
+    <div class="card-content">
+        <h2>Chhau Dance</h2>
+        <p>A UNESCO-recognized martial dance form combining grace, energy, and storytelling. It is performed during festivals and cultural events.</p>
+    </div>
+</div>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Updated to index.html
+}
+</script>
+
+</section>
+
+</body>
+</html>

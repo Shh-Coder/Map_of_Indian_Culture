@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Maharashtra - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #ff7b00, #ffb703);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;   /* Reduced size */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #ff7b00;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #ff7b00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d65a00;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌟 Maharashtra 🌟</h1>
+    <p>The Land of Warriors, Culture & Grand Festivals</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Gateway of India -->
+<div class="card">
+    <img src="gatewayofindia.jpg" alt="Gateway of India">
+    <div class="card-content">
+        <h2>Gateway of India</h2>
+        <p>
+        Located in Mumbai, the Gateway of India is one of Maharashtra’s most iconic monuments.
+        Built during the British era in 1924, it stands proudly on the Arabian Sea
+        and represents historical and architectural beauty.
+        </p>
+        <p>
+        It attracts thousands of visitors daily and serves as a symbol
+        of Mumbai’s grand colonial history and vibrant coastal culture.
+        </p>
+    </div>
+</div>
+
+<!-- Ajanta Caves -->
+<div class="card">
+    <img src="ajanta.jpg" alt="Ajanta Caves">
+    <div class="card-content">
+        <h2>Ajanta Caves</h2>
+        <p>
+        The Ajanta Caves are UNESCO World Heritage Sites famous for
+        ancient Buddhist paintings and rock-cut sculptures dating back
+        to the 2nd century BCE. They reflect India’s rich artistic history.
+        </p>
+        <p>
+        These caves beautifully showcase spiritual themes,
+        detailed carvings, and extraordinary craftsmanship
+        that continues to inspire historians and artists worldwide.
+        </p>
+    </div>
+</div>
+
+<!-- Raigad Fort -->
+<div class="card">
+    <img src="raigad.jpg" alt="Raigad Fort">
+    <div class="card-content">
+        <h2>Raigad Fort</h2>
+        <p>
+        Raigad Fort was the capital of Chhatrapati Shivaji Maharaj.
+        It symbolizes Maratha bravery, leadership, and strategic brilliance.
+        The fort stands high in the Sahyadri mountains.
+        </p>
+        <p>
+        The fort remains an important cultural landmark,
+        reminding people of Maharashtra’s proud warrior legacy
+        and inspiring generations with its powerful history.
+        </p>
+    </div>
+</div>
+
+<!-- Ganesh Chaturthi Festival -->
+<div class="card">
+    <img src="ganeshfestival.jpg" alt="Ganesh Chaturthi Festival">
+    <div class="card-content">
+        <h2>Ganesh Chaturthi</h2>
+        <p>
+        Ganesh Chaturthi is one of the grandest festivals celebrated in Maharashtra.
+        Devotees welcome Lord Ganesha idols into homes and public pandals
+        with music, dance, decorations, and prayers.
+        </p>
+        <p>
+        The festival lasts for 10 days and ends with a vibrant immersion
+        procession (Visarjan). Cities like Mumbai celebrate it on a massive scale,
+        bringing people together in joy and devotion.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Traditions</h2>
+        <p>
+        Maharashtra is known for Lavani dance, Koli traditions,
+        Marathi theatre (Tamasha), and vibrant festivals.
+        The state beautifully blends historical heritage
+        with modern city life.
+        </p>
+        <p>
+        From traditional attire like Nauvari sarees to energetic
+        dhol performances during festivals, Maharashtra’s culture
+        reflects unity, strength, and artistic richness.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()" target="_blank">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";
+}
+</script>
+
+</body>
+</html>

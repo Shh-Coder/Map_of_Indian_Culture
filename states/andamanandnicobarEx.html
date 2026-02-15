@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Andaman & Nicobar - Culture & Folklore</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e0f7fa; /* soft sea blue background */
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #00796b, #4db6ac); /* teal ocean gradient */
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: #ffffff;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #00796b; /* teal headings */
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #009688; /* teal button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00695c; /* darker teal */
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌴 Andaman & Nicobar Islands 🌴</h1>
+    <p>Island Culture, Tribal Traditions & Folklore</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Tribal Culture -->
+<div class="card">
+    <img src="NICOBARESE.jpg" alt="Tribal Culture">
+    <div class="card-content">
+        <h2>Tribal Culture</h2>
+        <p>
+        Andaman & Nicobar Islands are home to indigenous tribes such as the Jarawas, Sentinelese, and Nicobarese.  
+        Tribal traditions include unique dances, songs, and rituals passed down through generations.
+        </p>
+        <p>
+        These traditions preserve the folklore, stories, and heritage of the island communities.
+        </p>
+    </div>
+</div>
+
+<!-- Festivals -->
+<div class="card">
+    <img src="andamanfestival.jpg" alt="Festivals">
+    <div class="card-content">
+        <h2>Festivals</h2>
+        <p>
+        The islands celebrate a mix of tribal, local, and pan-Indian festivals, including Island Day and harvest festivals.  
+        Folk songs, dances, and community gatherings reflect the vibrant island lifestyle.
+        </p>
+        <p>
+        Festivals are an important way to keep tribal folklore alive among island communities.
+        </p>
+    </div>
+</div>
+
+<!-- Handicrafts & Art -->
+<div class="card">
+    <img src="andamanhandicraft.jpg" alt="Handicrafts">
+    <div class="card-content">
+        <h2>Handicrafts & Art</h2>
+        <p>
+        Local artisans create bamboo crafts, shell jewelry, and traditional carvings.  
+        Many items depict tribal myths, folklore, and stories inspired by the islands’ natural beauty.
+        </p>
+        <p>
+        These handicrafts are sold in local markets and help preserve the cultural identity of the islands.
+        </p>
+    </div>
+</div>
+
+<!-- Heritage Sites & Nature -->
+<div class="card">
+    <img src="andamanbeach.jpg" alt="Heritage & Nature">
+    <div class="card-content">
+        <h2>Heritage & Nature</h2>
+        <p>
+        The islands host historic sites like Cellular Jail and tribal villages, surrounded by lush forests and beaches.  
+        These sites, combined with local storytelling, keep the islands’ folklore and history alive.
+        </p>
+        <p>
+        Visitors can experience cultural performances, storytelling sessions, and guided heritage tours.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Folklore Summary</h2>
+        <p>
+        Andaman & Nicobar Islands boast a unique blend of tribal culture, folklore, festivals, and handicrafts.  
+        Indigenous traditions, dances, and storytelling keep the cultural heritage vibrant while connecting locals and visitors with the islands’ rich past.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Updated to index.html
+}
+</script>
+
+</body>
+</html>

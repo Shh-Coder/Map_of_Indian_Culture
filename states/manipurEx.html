@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Manipur - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0fff7;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #00695c, #26a69a);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+section {
+    padding: 30px 20px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #00796b;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #00695c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #004d40;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌸 Manipur 🌸</h1>
+    <p>The Jewel of Northeast India</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<div class="card">
+    <img src="raslila.jpg" alt="Ras Lila Dance">
+    <div class="card-content">
+        <h2>Ras Lila Dance</h2>
+        <p>
+        Ras Lila is the most famous classical dance form of Manipur,
+        inspired by the love story of Radha and Lord Krishna.
+        The graceful movements and devotional music make it spiritually enriching.
+        </p>
+        <p>
+        The dancers wear elaborate traditional costumes with cylindrical skirts
+        and delicate embroidery that enhance the beauty of the performance.
+        It reflects the deep religious and artistic culture of Manipur.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="loketak.jpg" alt="Loktak Lake">
+    <div class="card-content">
+        <h2>Loktak Lake</h2>
+        <p>
+        Loktak Lake is the largest freshwater lake in Northeast India
+        and is famous for its floating islands called phumdis.
+        It supports rich biodiversity and scenic beauty.
+        </p>
+        <p>
+        The lake is also home to Keibul Lamjao National Park,
+        the only floating national park in the world,
+        making it a unique ecological treasure of India.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Sangaifestival.jpg" alt="Sangai Festival">
+    <div class="card-content">
+        <h2>Sangai Festival</h2>
+        <p>
+        The Sangai Festival is the biggest cultural festival of Manipur,
+        celebrated annually to promote tourism and tradition.
+        It showcases dance, music, art, and local cuisine.
+        </p>
+        <p>
+        Named after the rare Sangai deer,
+        the festival highlights the cultural richness
+        and vibrant heritage of the Manipuri people.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kerala - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3fff6;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #2e7d32, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+section {
+    padding: 30px 20px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height:350px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌴 Kerala 🌴</h1>
+    <p>God’s Own Country</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<div class="card">
+    <img src="kathakali.jpg" alt="Kathakali Dance">
+    <div class="card-content">
+        <h2>Kathakali</h2>
+        <p>
+        Kathakali is a famous classical dance-drama of Kerala,
+        known for its elaborate costumes, colorful makeup, and expressive gestures.
+        It tells stories from Indian epics like the Ramayana and Mahabharata.
+        </p>
+        <p>
+        Performers undergo years of training to master facial expressions and hand movements.
+        The dramatic storytelling and traditional music make Kathakali
+        one of the most unique art forms in India.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="kb.jpg" alt="Kerala Backwaters">
+    <div class="card-content">
+        <h2>Kerala Backwaters</h2>
+        <p>
+        The backwaters of Kerala are a network of lagoons, canals, and lakes
+        that run parallel to the Arabian Sea coast.
+        Houseboat cruises are a major attraction for visitors.
+        </p>
+        <p>
+        Surrounded by coconut trees and peaceful villages,
+        the backwaters reflect Kerala’s natural beauty
+        and play an important role in local transportation and tourism.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="onam.jpg" alt="Onam Festival">
+    <div class="card-content">
+        <h2>Onam Festival</h2>
+        <p>
+        Onam is the most important festival of Kerala,
+        celebrated with traditional dances, boat races, and grand feasts.
+        It marks the homecoming of the legendary King Mahabali.
+        </p>
+        <p>
+        People decorate their homes with colorful flower rangolis called Pookalam,
+        wear traditional attire, and enjoy the Onam Sadhya,
+        a delicious multi-course vegetarian meal served on banana leaves.
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="kalaripyattu.jpg" alt="Kalaripayattu Martial Art">
+    <div class="card-content">
+        <h2>Kalaripayattu</h2>
+        <p>
+        Kalaripayattu is one of the oldest martial arts in the world,
+        originating in Kerala thousands of years ago.
+        It combines physical training, weapon practice, and meditation.
+        </p>
+        <p>
+        The art form focuses on discipline, flexibility, and strength,
+        and it has influenced many modern martial arts styles.
+        It remains an important part of Kerala’s traditional heritage.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";
+}
+</script>
+
+</body>
+</html>
