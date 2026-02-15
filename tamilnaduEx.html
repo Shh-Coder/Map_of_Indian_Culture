@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tamil Nadu - Culture & Folklore</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fdf6f0;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #ff7043, #ffab91);
+  color: white;
+  text-align: center;
+  padding: 25px 10px 15px 10px;
+  font-size: 28px;
+  font-weight: bold;
+  animation: fadeDown 1s ease;
+}
+
+/* Scroll Notice */
+.scroll-note {
+  text-align: center;
+  font-size: 14px;
+  color: #fff3e0;
+  margin-top: 5px;
+}
+
+.arrow {
+  display: block;
+  font-size: 20px;
+  animation: bounce 1.5s infinite;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Cards */
+.card {
+  background: white;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card h2 {
+  color: #ff7043;
+  margin-top: 0;
+}
+
+/* Reduced Image Size */
+.card img {
+  width: 70%;
+  max-width: 420px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Back Button */
+.back-btn {
+  display: block;
+  width: 220px;
+  margin: 30px auto;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7043;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: black;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff7043;
+}
+
+/* Animations */
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-40px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes bounce {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(8px);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  🌺 Tamil Nadu – Culture & Folklore 🌺
+  <div class="scroll-note">
+    Scroll down to explore the rich traditions
+    <span class="arrow">⬇</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>🛕 Dravidian Temple Architecture</h2>
+    <img src="meenakshitemple.jpg" alt="Meenakshi Temple">
+    <p>
+      Tamil Nadu is renowned for its towering gopurams and beautifully carved temple complexes.
+      These temples were built by powerful dynasties like the Cholas, Pandyas, and Pallavas.
+      They are not only religious spaces but also centers of music, dance, festivals, and community gatherings.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>💃 Bharatanatyam</h2>
+    <img src="bharatanatyam.jpg" alt="Bharatanatyam Dance">
+    <p>
+      Bharatanatyam is one of India’s oldest classical dance forms that originated in Tamil Nadu.
+      It combines rhythmic footwork, expressive facial expressions, and symbolic hand gestures.
+      The dance traditionally narrates stories from Hindu mythology and spiritual texts.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🎭 Folk Traditions</h2>
+    <img src="tamilfolklore.jpg" alt="Therukoothu Performance">
+    <p>
+      Tamil Nadu has vibrant folk arts such as Karagattam, Kavadi Attam, and Therukoothu.
+      These performances are often staged during temple festivals and village celebrations.
+      They depict stories from epics and local folklore through music, drama, and colorful costumes.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🎉 Pongal Festival</h2>
+    <img src="pongal.jpg" alt="Pongal Festival">
+    <p>
+      Pongal is a major harvest festival celebrated to thank the Sun God and nature.
+      Families prepare a special sweet rice dish called Pongal and decorate homes with Kolam designs.
+      The festival highlights Tamil Nadu’s deep agricultural roots and spirit of gratitude.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>📜 Sangam Literature</h2>
+    <img src="sangamliterature.jpg" alt="Ancient Tamil Manuscript">
+    <p>
+      Sangam literature is among the oldest surviving literary traditions in the world.
+      Written over 2000 years ago, it describes ancient Tamil society, love, war, and ethics.
+      It continues to be a proud symbol of Tamil cultural identity and intellectual heritage.
+    </p>
+  </div>
+
+  <button class="back-btn" onclick="goToPopup()">⬅ Back to Popup</button>
+
+</div>
+
+<script>
+function goToPopup() {
+  window.location.href = "../index.html";
+}
+
+/* Scroll Reveal */
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+  const trigger = window.innerHeight * 0.85;
+
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if(top < trigger){
+      card.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>

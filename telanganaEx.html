@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Telangana - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #6a1b9a, #ab47bc);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #6a1b9a;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4a0072;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌟 Telangana 🌟</h1>
+    <p>The Land of Nizams, Temples & Festivals</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Charminar -->
+<div class="card">
+    <img src="charminar.jpg" alt="Charminar">
+    <div class="card-content">
+        <h2>Charminar</h2>
+        <p>
+        Charminar is the iconic landmark of Hyderabad and Telangana.
+        Built in 1591, this 16th-century mosque and monument reflects Indo-Islamic architecture
+        and is a bustling hub for culture and trade.
+        </p>
+        <p>
+        The surrounding markets, including Laad Bazaar, are famous for traditional jewelry,
+        bangles, and local crafts.
+        </p>
+    </div>
+</div>
+
+<!-- Golconda Fort -->
+<div class="card">
+    <img src="golcondafort.jpg" alt="Golconda Fort">
+    <div class="card-content">
+        <h2>Golconda Fort</h2>
+        <p>
+        Golconda Fort, near Hyderabad, is renowned for its strong architecture,
+        acoustic system, and historical significance as a diamond trading center.
+        </p>
+        <p>
+        Visitors enjoy exploring the fort’s massive gates, royal halls,
+        and sunset views from the top of the hill.
+        </p>
+    </div>
+</div>
+
+<!-- Ramoji Film City -->
+<div class="card">
+    <img src="ramoji.jpg" alt="Ramoji Film City">
+    <div class="card-content">
+        <h2>Ramoji Film City</h2>
+        <p>
+        Ramoji Film City is the world’s largest film studio complex, located in Hyderabad.
+        It showcases Telangana’s modern culture, entertainment, and tourism.
+        </p>
+        <p>
+        Visitors can explore film sets, gardens, adventure activities,
+        and enjoy theme park attractions in a cinematic environment.
+        </p>
+    </div>
+</div>
+
+<!-- Bonalu Festival -->
+<div class="card">
+    <img src="bonalu.jpg" alt="Bonalu Festival">
+    <div class="card-content">
+        <h2>Bonalu Festival</h2>
+        <p>
+        Bonalu is a traditional Hindu festival celebrated in Telangana
+        to honor Goddess Mahakali. Women offer cooked rice in pots
+        while men participate in colorful processions with music and dance.
+        </p>
+        <p>
+        It is a vibrant display of devotion, culture, and community spirit,
+        mainly observed in Hyderabad and Secunderabad.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Traditions</h2>
+        <p>
+        Telangana is rich in folk arts like Perini dance, Lambadi embroidery,
+        Telugu literature, and temple architecture.
+        Its festivals, music, and cuisine reflect the unique identity
+        of the state.
+        </p>
+        <p>
+        From Hyderabadi biryani to traditional handicrafts and vibrant folk dances,
+        Telangana’s culture celebrates diversity, history, and artistic excellence.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Assuming the popup page is telangana.html
+}
+</script>
+
+</body>
+</html>

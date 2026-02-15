@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Uttar Pradesh - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #ff3d00, #ff7043);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #ff3d00;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: violet;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #c62828;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌟 Uttar Pradesh 🌟</h1>
+    <p>The Land of Temples, Ghats & Heritage</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Taj Mahal -->
+<div class="card">
+    <img src="tajmahal.jpg" alt="Taj Mahal">
+    <div class="card-content">
+        <h2>Taj Mahal</h2>
+        <p>
+        The Taj Mahal in Agra is one of the Seven Wonders of the World
+        and a UNESCO World Heritage Site. Built by Emperor Shah Jahan,
+        it is a symbol of love and architectural brilliance.
+        </p>
+        <p>
+        Millions of visitors come to admire the white marble mausoleum,
+        intricate carvings, and beautiful gardens every year.
+        </p>
+    </div>
+</div>
+
+<!-- Varanasi Ghats -->
+<div class="card">
+    <img src="varanasi.jpg" alt="Varanasi Ghats">
+    <div class="card-content">
+        <h2>Varanasi Ghats</h2>
+        <p>
+        Varanasi, one of the oldest living cities in the world, is famous
+        for its ghats along the Ganga River. The ghats are centers of spiritual
+        rituals, including morning prayers, boat rides, and evening Aarti ceremonies.
+        </p>
+        <p>
+        The ghats reflect the rich religious and cultural traditions of Uttar Pradesh.
+        </p>
+    </div>
+</div>
+
+<!-- Lucknow Heritage -->
+<div class="card">
+    <img src="lucknow.jpg" alt="Lucknow Heritage">
+    <div class="card-content">
+        <h2>Lucknow Heritage</h2>
+        <p>
+        Lucknow, the capital of Uttar Pradesh, is known for its Nawabi culture,
+        historical monuments, and exquisite cuisine.  
+        Bada Imambara, Rumi Darwaza, and Chota Imambara are major attractions.
+        </p>
+        <p>
+        The city is also famous for traditional arts like Chikankari embroidery
+        and classical music.
+        </p>
+    </div>
+</div>
+
+<!-- Kumbh Mela -->
+<div class="card">
+    <img src="kumbhmela.jpg" alt="Kumbh Mela">
+    <div class="card-content">
+        <h2>Kumbh Mela</h2>
+        <p>
+        Kumbh Mela, held in Prayagraj and Haridwar, is one of the largest
+        religious gatherings in the world. Devotees come to bathe in sacred rivers
+        seeking spiritual purification.
+        </p>
+        <p>
+        The festival represents faith, devotion, and unity among millions of people.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Traditions</h2>
+        <p>
+        Uttar Pradesh is rich in classical music, dance, traditional theatre,
+        temple architecture, and vibrant festivals.  
+        It is home to diverse cuisines, folk arts, and spiritual centers.
+        </p>
+        <p>
+        From Mughlai cuisine to religious rituals at ghats and temples,
+        Uttar Pradesh’s culture reflects history, devotion, and artistic brilliance.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Assuming the popup page is uttarpradesh.html
+}
+</script>
+
+</body>
+</html>
