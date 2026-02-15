@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rajasthan - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #c76f00, #ffb74d);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #c76f00;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #c76f00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #a65a00;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌟 Rajasthan 🌟</h1>
+    <p>The Land of Royals, Forts & Desert Culture</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Amer Fort -->
+<div class="card">
+    <img src="amerfort.jpg" alt="Amer Fort">
+    <div class="card-content">
+        <h2>Amer Fort</h2>
+        <p>
+        Amer Fort in Jaipur is a magnificent fort known for its artistic Hindu style elements,
+        including large ramparts, series of gates, and cobbled paths.
+        </p>
+        <p>
+        The fort overlooks Maota Lake and attracts tourists with its palace halls, gardens, and cultural performances.
+        </p>
+    </div>
+</div>
+
+<!-- City Palace -->
+<div class="card">
+    <img src="citypalace.jpg" alt="City Palace">
+    <div class="card-content">
+        <h2>City Palace, Jaipur</h2>
+        <p>
+        City Palace is a royal residence blending Mughal and Rajasthani architecture.
+        It houses museums displaying royal costumes, arms, and artifacts of the Rajput era.
+        </p>
+        <p>
+        The palace complex is one of Jaipur's most iconic cultural landmarks.
+        </p>
+    </div>
+</div>
+
+<!-- Thar Desert -->
+<div class="card">
+    <img src="thardesert.jpg" alt="Thar Desert">
+    <div class="card-content">
+        <h2>Thar Desert</h2>
+        <p>
+        The Thar Desert, also called the Great Indian Desert, is a vast arid region
+        known for its sand dunes, camel safaris, and desert festivals.
+        </p>
+        <p>
+        Visitors experience the unique desert culture, including folk music, dance, and local cuisine.
+        </p>
+    </div>
+</div>
+
+<!-- Pushkar Fair -->
+<div class="card">
+    <img src="camelfair.jpg" alt="Pushkar Fair">
+    <div class="card-content">
+        <h2>Pushkar Camel Fair</h2>
+        <p>
+        The Pushkar Fair is an annual livestock and cultural festival, attracting thousands of tourists.
+        It showcases camel trading, folk performances, and traditional Rajasthani handicrafts.
+        </p>
+        <p>
+        The festival is a vibrant display of Rajasthan's desert traditions.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Traditions</h2>
+        <p>
+        Rajasthan is famous for its forts, palaces, folk dances like Ghoomar and Kalbeliya,
+        traditional music, and colorful attire including turbans and lehengas.
+        </p>
+        <p>
+        The state’s cuisine, handicrafts, and festivals reflect its rich royal heritage and desert culture.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Assuming the popup page is rajasthan.html
+}
+</script>
+
+</body>
+</html>

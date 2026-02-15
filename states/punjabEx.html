@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Punjab - Cultural Details</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(to right, #ff6f00, #ffa000);
+    color: white;
+    text-align: center;
+    padding: 50px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+    100% { transform: translateY(0); }
+}
+
+/* Content Section */
+section {
+    padding: 30px 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    margin: 30px auto;
+    max-width: 850px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: #ff6f00;
+}
+
+/* Back Button */
+button {
+    margin: 50px auto;
+    display: block;
+    padding: 12px 25px;
+    background: #ff6f00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e65100;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌟 Punjab 🌟</h1>
+    <p>The Land of Five Rivers, Culture & Festivals</p>
+    <div class="scroll-text">⬇ Scroll Down to Explore ⬇</div>
+</header>
+
+<section>
+
+<!-- Golden Temple -->
+<div class="card">
+    <img src="golden.jpg" alt="Golden Temple">
+    <div class="card-content">
+        <h2>Golden Temple</h2>
+        <p>
+        The Golden Temple in Amritsar is the holiest Gurdwara of Sikhism and a symbol of peace.
+        Its stunning architecture, gold-plated exterior, and sacred pool attract millions of visitors.
+        </p>
+        <p>
+        The temple is also famous for its Langar, serving free meals to thousands every day.
+        </p>
+    </div>
+</div>
+
+<!-- Wagah Border -->
+<div class="card">
+    <img src="wagah.jpg" alt="Wagah Border">
+    <div class="card-content">
+        <h2>Wagah Border Ceremony</h2>
+        <p>
+        Wagah Border between India and Pakistan is famous for the daily flag-lowering ceremony.
+        Visitors witness an energetic display of patriotism, marching, and cultural pride.
+        </p>
+        <p>
+        It symbolizes the unique culture and spirit of Punjab as well as Indo-Pak relations.
+        </p>
+    </div>
+</div>
+
+<!-- Amritsar Heritage -->
+<div class="card">
+    <img src="amritsar.jpg" alt="Amritsar Heritage">
+    <div class="card-content">
+        <h2>Amritsar Heritage</h2>
+        <p>
+        Amritsar is rich in historical heritage including Jallianwala Bagh and cultural traditions.
+        The city reflects Sikh history, colonial architecture, and vibrant street life.
+        </p>
+        <p>
+        Tourists enjoy heritage walks, local markets, and traditional Punjabi cuisine.
+        </p>
+    </div>
+</div>
+
+<!-- Baisakhi Festival -->
+<div class="card">
+    <img src="baisakhi.jpg" alt="Baisakhi Festival">
+    <div class="card-content">
+        <h2>Baisakhi Festival</h2>
+        <p>
+        Baisakhi is a major harvest festival in Punjab celebrated with traditional dances like Bhangra and Giddha.
+        It marks the start of the new harvest season and has religious significance for Sikhs.
+        </p>
+        <p>
+        The festival brings communities together in joy, music, and dance.
+        </p>
+    </div>
+</div>
+
+<!-- Culture Summary -->
+<div class="card">
+    <div class="card-content">
+        <h2>Culture & Traditions</h2>
+        <p>
+        Punjab is known for Bhangra and Giddha dances, vibrant festivals, folk music, and Sikh traditions.
+        The state also has rich culinary heritage including Makki di Roti and Sarson da Saag.
+        </p>
+        <p>
+        From traditional attire to religious rituals, Punjab’s culture reflects energy, devotion, and artistic excellence.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<button onclick="goBack()">⬅ Back to Popup</button>
+
+<script>
+function goBack() {
+    window.location.href = "../index.html";  // Assuming the popup page is punjab.html
+}
+</script>
+
+</body>
+</html>
